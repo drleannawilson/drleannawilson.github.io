@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. LeAnna R. Wilson, Ed.D. — Executive Leader in Education &amp; Strategic Partnerships</title>
+<meta name="description" content="Dr. LeAnna R. Wilson, Ed.D. — Executive leader driving cross-sector education partnerships, federally funded program leadership, and strategic pathways at scale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0b1f3a;
+    --navy-light:#14315c;
+    --navy-soft:#1d3a63;
+    --gold:#c9a453;
+    --gold-light:#e3c98a;
+    --cream:#f8f6f1;
+    --paper:#ffffff;
+    --text:#1a1e26;
+    --muted:#5b6472;
+    --border:#e6e2d8;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--text);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Playfair Display', Georgia, serif;
+    font-weight:600;
+    line-height:1.15;
+    color:var(--navy);
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  section{padding:96px 0;}
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    font-size:.72rem;
+    font-weight:600;
+    color:var(--gold);
+  }
+  .section-head{max-width:640px;margin-bottom:56px;}
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:10px;}
+  .section-head p{color:var(--muted);margin-top:14px;font-size:1.02rem;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(11,31,58,0.96);
+    backdrop-filter:blur(6px);
+  }
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    max-width:var(--maxw);margin:0 auto;padding:18px 32px;
+  }
+  .brand{color:var(--cream);font-family:'Playfair Display',serif;font-weight:600;font-size:1.05rem;letter-spacing:.02em;}
+  .brand span{color:var(--gold);}
+  .navlinks{display:flex;gap:32px;align-items:center;}
+  .navlinks a{color:#cfd6e2;font-size:.88rem;font-weight:500;transition:color .15s;}
+  .navlinks a:hover{color:var(--gold-light);}
+  .nav-toggle{display:none;background:none;border:none;color:var(--cream);font-size:1.4rem;cursor:pointer;}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-light) 55%,var(--navy-soft) 100%);
+    color:var(--cream);
+    padding:88px 0 100px;
+  }
+  .hero .wrap{
+    display:grid;grid-template-columns:1.3fr .8fr;gap:56px;align-items:center;
+  }
+  .hero .eyebrow{color:var(--gold-light);}
+  .hero h1{
+    color:#fff;font-size:clamp(2.3rem,4.6vw,3.4rem);margin:14px 0 20px;
+  }
+  .hero-role{
+    font-size:1.15rem;color:var(--gold-light);font-weight:500;margin-bottom:18px;
+    font-family:'Playfair Display',serif;
+  }
+  .hero p.lede{
+    color:#dfe4ec;font-size:1.08rem;max-width:560px;
+  }
+  .hero-loc{
+    margin-top:18px;color:#a9b4c5;font-size:.9rem;
+  }
+  .hero-cta{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:13px 26px;border-radius:2px;font-weight:600;font-size:.92rem;
+    transition:transform .15s, box-shadow .15s;
+  }
+  .btn-primary{background:var(--gold);color:var(--navy);}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(201,164,83,.35);}
+  .btn-outline{border:1px solid #5a6b85;color:#e8ecf2;}
+  .btn-outline:hover{border-color:var(--gold-light);color:var(--gold-light);}
+
+  .portrait-frame{
+    width:100%;aspect-ratio:1/1;border-radius:6px;
+    background:linear-gradient(135deg,var(--gold-light),var(--gold) 60%,#a3823c);
+    display:flex;align-items:center;justify-content:center;position:relative;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.5);
+  }
+  .portrait-frame .initials{
+    font-family:'Playfair Display',serif;font-size:4.5rem;color:var(--navy);font-weight:600;
+  }
+  .portrait-frame img{
+    width:100%;height:100%;object-fit:cover;border-radius:6px;
+  }
+
+  /* STATS BAR */
+  .stats{
+    background:var(--navy);border-top:1px solid rgba(255,255,255,.08);
+  }
+  .stats .wrap{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:44px 32px;
+  }
+  .stat h3{
+    color:var(--gold-light);font-size:clamp(1.7rem,3vw,2.2rem);
+  }
+  .stat p{color:#b7c0d0;font-size:.85rem;margin-top:6px;}
+
+  /* PHILOSOPHY */
+  .philosophy{background:var(--paper);}
+  .philosophy .intro{
+    font-size:1.15rem;color:var(--text);max-width:760px;margin-bottom:48px;
+  }
+  .phil-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:28px;
+  }
+  .phil-card h4{font-size:1.05rem;margin-bottom:10px;}
+  .phil-card p{color:var(--muted);font-size:.92rem;}
+  .phil-card{border-top:3px solid var(--gold);padding-top:16px;}
+
+  .worked-with{margin-top:56px;border-top:1px solid var(--border);padding-top:32px;}
+  .worked-with .eyebrow{display:block;margin-bottom:16px;}
+  .worked-with ul{display:flex;flex-wrap:wrap;gap:14px 34px;list-style:none;}
+  .worked-with li{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--navy-soft);font-weight:600;}
+
+  /* CASE STUDIES */
+  .work{background:var(--cream);}
+  .case{
+    display:grid;grid-template-columns:.9fr 1.5fr;gap:40px;
+    background:var(--paper);border:1px solid var(--border);border-radius:8px;
+    padding:40px;margin-bottom:28px;
+  }
+  .case-tag{color:var(--gold);font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;}
+  .case h3{font-size:1.5rem;margin:10px 0 14px;}
+  .case p{color:var(--muted);font-size:.98rem;}
+  .case-stats{display:flex;gap:32px;margin-top:22px;flex-wrap:wrap;}
+  .case-stats div h4{color:var(--navy);font-size:1.5rem;font-family:'Playfair Display',serif;}
+  .case-stats div span{display:block;color:var(--muted);font-size:.78rem;margin-top:2px;}
+  .case-meta{display:flex;flex-direction:column;gap:14px;}
+  .case-meta .m-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);}
+  .case-meta .m-value{font-weight:600;color:var(--navy);font-size:.95rem;}
+
+  /* EXPERTISE */
+  .expertise{background:var(--paper);}
+  .exp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
+  .exp-card{background:var(--cream);border-radius:8px;padding:28px;border:1px solid var(--border);}
+  .exp-card h4{font-size:1.05rem;margin-bottom:14px;color:var(--navy);}
+  .tag-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag{
+    background:#fff;border:1px solid var(--border);color:var(--text);
+    font-size:.8rem;padding:6px 12px;border-radius:20px;
+  }
+
+  /* EXPERIENCE TIMELINE */
+  .experience{background:var(--navy);color:var(--cream);}
+  .experience .section-head h2{color:#fff;}
+  .experience .section-head p{color:#b7c0d0;}
+  .timeline{border-left:2px solid rgba(255,255,255,.15);}
+  .tl-item{position:relative;padding:0 0 40px 32px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:'';position:absolute;left:-7px;top:4px;width:12px;height:12px;
+    border-radius:50%;background:var(--gold);
+  }
+  .tl-date{color:var(--gold-light);font-size:.82rem;font-weight:600;letter-spacing:.03em;}
+  .tl-item h3{color:#fff;font-size:1.2rem;margin:6px 0 2px;}
+  .tl-org{color:#a9b4c5;font-size:.9rem;margin-bottom:12px;}
+  .tl-item ul{color:#c7cede;font-size:.92rem;padding-left:18px;}
+  .tl-item li{margin-bottom:6px;}
+  .tl-item.additional .tl-org{margin-bottom:4px;}
+
+  /* EDUCATION + AWARDS */
+  .creds{background:var(--cream);}
+  .creds-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .creds-col h3{font-size:1.2rem;margin-bottom:20px;}
+  .cred-item{margin-bottom:18px;border-left:2px solid var(--gold);padding-left:16px;}
+  .cred-item h4{font-size:1rem;color:var(--navy);}
+  .cred-item p{color:var(--muted);font-size:.88rem;margin-top:2px;}
+  .award-item{margin-bottom:16px;}
+  .award-item .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:600;}
+  .award-item p{font-size:.92rem;color:var(--text);margin-top:4px;}
+  .award-item span.yr{color:var(--muted);}
+
+  /* CONTACT */
+  .contact{background:var(--paper);text-align:center;}
+  .contact h2{font-size:clamp(1.8rem,3.4vw,2.5rem);}
+  .contact p.lede{color:var(--muted);max-width:520px;margin:16px auto 32px;font-size:1.05rem;}
+  .contact-links{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:.98rem;}
+  .contact-links a{color:var(--navy);font-weight:600;border-bottom:2px solid var(--gold);padding-bottom:2px;}
+
+  footer{background:var(--navy);color:#8b96a8;text-align:center;padding:28px 0;font-size:.82rem;}
+
+  @media (max-width:860px){
+    .navlinks{
+      position:absolute;top:100%;left:0;right:0;background:var(--navy);
+      flex-direction:column;padding:20px 32px;gap:18px;display:none;
+    }
+    .navlinks.open{display:flex;}
+    .nav-toggle{display:block;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero .portrait-frame{max-width:280px;margin:0 auto;}
+    .stats .wrap{grid-template-columns:repeat(2,1fr);}
+    .phil-grid{grid-template-columns:repeat(2,1fr);}
+    .case{grid-template-columns:1fr;}
+    .exp-grid{grid-template-columns:1fr;}
+    .creds-grid{grid-template-columns:1fr;}
+    section{padding:64px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#hero" class="brand">Dr. LeAnna R. Wilson<span>, Ed.D.</span></a>
+    <div class="navlinks" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#work">Impact</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Executive Leader &middot; Education &amp; Strategic Partnerships</span>
+      <h1>Dr. LeAnna R. Wilson</h1>
+      <div class="hero-role">Turning Strategy Into Systems That Scale</div>
+      <p class="lede">I've spent 20+ years building the cross-sector systems that turn strategy into postsecondary pathways — leading federally funded GEAR UP portfolios, district partnerships, and national ed-tech operations that create real change at scale for underserved students.</p>
+      <div class="hero-loc">Fort Wayne, Indiana &nbsp;|&nbsp; Open to Remote (US)</div>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See the Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="portrait-frame">
+      <img src="headshot.jpg" alt="Dr. LeAnna R. Wilson">
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stat"><h3>20+</h3><p>Years in cross-sector education leadership</p></div>
+    <div class="stat"><h3>23</h3><p>Districts &amp; GEAR UP partners led nationally</p></div>
+    <div class="stat"><h3>90%+</h3><p>Year-over-year partner retention</p></div>
+    <div class="stat"><h3>100%</h3><p>Onboarding &amp; implementation success, annually</p></div>
+  </div>
+</section>
+
+<section class="philosophy" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Philosophy</span>
+      <h2>Turning strategy into systems that scale</h2>
+    </div>
+    <p class="intro">My experience spans national ed-tech operations, executive leadership consulting, data-driven storytelling, and building postsecondary pathways for K-12 school districts and federally funded programs. The common thread: frameworks and partnerships built to outlast any single grant cycle, and designed for the districts and students who need them most.</p>
+    <div class="phil-grid">
+      <div class="phil-card">
+        <h4>Strategy → systems</h4>
+        <p>Frameworks and playbooks — like partner health tracking and grant sustainability planning — that turn high-level strategy into tools partners actually use.</p>
+      </div>
+      <div class="phil-card">
+        <h4>Equity-centered design</h4>
+        <p>Programs and pathways built around underserved school districts, with student success at scale as the north star.</p>
+      </div>
+      <div class="phil-card">
+        <h4>Cross-sector fluency</h4>
+        <p>Fluent across K-12, postsecondary, ed-tech, and federally funded program worlds — able to broker collaboration where others see silos.</p>
+      </div>
+      <div class="phil-card">
+        <h4>Data-informed storytelling</h4>
+        <p>ROI analyses and executive reporting that keep leadership and funders aligned on real impact, not just activity.</p>
+      </div>
+    </div>
+
+    <div class="worked-with">
+      <span class="eyebrow">Worked with &amp; alongside</span>
+      <ul>
+        <li>Student Success Agency</li>
+        <li>Pearson Virtual Schools</li>
+        <li>McKinsey &amp; Company</li>
+        <li>National GEAR UP Network</li>
+        <li>Fort Wayne Community Schools</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Impact</span>
+      <h2>Featured Initiatives</h2>
+      <p>Programs and frameworks built to standardize quality, scale impact, and outlast any single leader or grant cycle.</p>
+    </div>
+
+    <div class="case">
+      <div class="case-meta">
+        <div><span class="m-label">Category</span><br><span class="m-value">Federal Program Leadership</span></div>
+        <div><span class="m-label">Role</span><br><span class="m-value">VP of Partnerships, Student Success Agency</span></div>
+        <div><span class="m-label">Timeframe</span><br><span class="m-value">2022 – 2026</span></div>
+      </div>
+      <div>
+        <span class="case-tag">GEAR UP &amp; District Partnerships</span>
+        <h3>Leading a National GEAR UP &amp; District Partnership Portfolio</h3>
+        <p>As VP of Partnerships, I led a national portfolio of 23 public school districts, colleges, and GEAR UP grant-funded partners — providing direct oversight, counsel, and leadership to school leaders across the country while managing the operations team behind the work. I authored the company's policy handbook, led quarterly cross-partner trainings, and delivered ROI reporting for executive stakeholders and funders, all while running multiple concurrent, federally funded projects at once. That portfolio work led to a keynote introduction at the 2025 National GEAR UP Conference.</p>
+        <div class="case-stats">
+          <div><h4>23</h4><span>Partners led</span></div>
+          <div><h4>90%+</h4><span>Retention</span></div>
+          <div><h4>100%</h4><span>Onboarding success</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-meta">
+        <div><span class="m-label">Category</span><br><span class="m-value">Partner Success / Program Design</span></div>
+        <div><span class="m-label">Role</span><br><span class="m-value">VP of Partnerships, Student Success Agency</span></div>
+        <div><span class="m-label">Scope</span><br><span class="m-value">All partners — grant-funded &amp; district</span></div>
+      </div>
+      <div>
+        <span class="case-tag">Partner Success Framework</span>
+        <h3>Customer Journey Playbook</h3>
+        <p>Every partner — whether a GEAR UP grant recipient or a district paying directly — moves through the same lifecycle: onboarding, implementation, renewal. I built the Customer Journey Playbook to standardize that lifecycle across all 23 partners, embedding the Partner Health Score Tracker directly into it so early warning signs surfaced before a renewal conversation, not during one. It became the operating backbone for how the team managed every partner relationship, regardless of funding source.</p>
+        <div class="case-stats">
+          <div><h4>23</h4><span>Partners covered</span></div>
+          <div><h4>1</h4><span>Health score embedded</span></div>
+          <div><h4>Full</h4><span>Lifecycle: onboarding → renewal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-meta">
+        <div><span class="m-label">Category</span><br><span class="m-value">Grant Strategy / Federal Program Leadership</span></div>
+        <div><span class="m-label">Role</span><br><span class="m-value">VP of Partnerships, Student Success Agency</span></div>
+        <div><span class="m-label">Audience</span><br><span class="m-value">GEAR UP grant directors</span></div>
+      </div>
+      <div>
+        <span class="case-tag">Grant Sustainability</span>
+        <h3>7-Year GEAR UP Grant Sustainability Playbook</h3>
+        <p>GEAR UP grants run on a fixed federal timeline — the real test is what a district can sustain once year seven ends. Built specifically for GEAR UP grant directors (a distinct track from the broader Customer Journey Playbook), this playbook walked directors through sustainability planning from day one instead of scrambling in year six, translating federal grant requirements into a practical, year-by-year roadmap partners could actually act on.</p>
+        <div class="case-stats">
+          <div><h4>7-yr</h4><span>Planning horizon</span></div>
+          <div><h4>Grant directors</h4><span>Primary audience</span></div>
+          <div><h4>Federal</h4><span>Compliance-aligned</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-meta">
+        <div><span class="m-label">Category</span><br><span class="m-value">Instructional Systems</span></div>
+        <div><span class="m-label">Role</span><br><span class="m-value">Manager of Teacher Operations, Pearson Virtual Schools</span></div>
+        <div><span class="m-label">Timeframe</span><br><span class="m-value">2015 – 2019</span></div>
+      </div>
+      <div>
+        <span class="case-tag">Instructional Systems / Online Learning</span>
+        <h3>Transforming the Dufour PLC Model for Virtual Teacher Communities</h3>
+        <p>The Dufour Professional Learning Communities model was built for teachers sharing a hallway, not a login. While overseeing 20+ PLC Department Chairs and coaching 20+ state-certified online teachers nationwide, I led the project that rebuilt the Dufour model into a fully online format — one that let virtual teacher communities collaborate, evaluate practice, and improve instruction with the same rigor as an in-building team. The format was adopted more broadly across the organization's national online teacher network.</p>
+        <div class="case-stats">
+          <div><h4>20+</h4><span>PLC Chairs overseen</span></div>
+          <div><h4>20+</h4><span>Teachers coached nationwide</span></div>
+          <div><h4>Nat'l</h4><span>Adoption</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="expertise">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Capabilities</span>
+      <h2>Core Executive Capabilities</h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card">
+        <h4>Leadership &amp; Strategy</h4>
+        <div class="tag-row">
+          <span class="tag">Executive Leadership</span>
+          <span class="tag">Cross-Sector Advising</span>
+          <span class="tag">Strategic Planning &amp; Implementation</span>
+          <span class="tag">Multi-Site Portfolio Management</span>
+          <span class="tag">Equity-Centered Program Design</span>
+        </div>
+      </div>
+      <div class="exp-card">
+        <h4>Federal &amp; Grant Programs</h4>
+        <div class="tag-row">
+          <span class="tag">GEAR UP Program Leadership</span>
+          <span class="tag">Federally Funded Program Compliance</span>
+          <span class="tag">Grant Sustainability Planning</span>
+          <span class="tag">Partner &amp; Funder Relationship Management</span>
+        </div>
+      </div>
+      <div class="exp-card">
+        <h4>Systems &amp; Platforms</h4>
+        <div class="tag-row">
+          <span class="tag">Canvas</span><span class="tag">Schoology</span><span class="tag">Blackboard</span>
+          <span class="tag">Google Classroom</span><span class="tag">Winbox</span><span class="tag">Metabase</span>
+          <span class="tag">HubSpot</span><span class="tag">Linear</span><span class="tag">Canva</span><span class="tag">Zoom</span>
+        </div>
+      </div>
+      <div class="exp-card">
+        <h4>Communication &amp; Thought Leadership</h4>
+        <div class="tag-row">
+          <span class="tag">Public Speaking &amp; Facilitation</span>
+          <span class="tag">Research &amp; Writing</span>
+          <span class="tag">Data Storytelling &amp; ROI Reporting</span>
+          <span class="tag">Convening Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Background</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">2022 – 2026</div>
+        <h3>Vice President of Partnerships</h3>
+        <div class="tl-org">Student Success Agency</div>
+        <ul>
+          <li>Led a national portfolio of 23 public school districts, colleges, and GEAR UP grant-funded partners</li>
+          <li>Directly managed the operations team — hiring, performance, and company-wide culture initiatives</li>
+          <li>Authored the company's comprehensive policy handbook</li>
+          <li>Built the Partner Health Score Tracker, Customer Journey Playbook, Classroom Curriculum, and 7-Year Grant Sustainability Playbook</li>
+          <li>Maintained 90%+ year-over-year partner retention and 100% onboarding/implementation success annually</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2019 – 2022</div>
+        <h3>Instructional Leadership Consulting Specialist</h3>
+        <div class="tl-org">Pearson Virtual Schools</div>
+        <ul>
+          <li>Coached and consulted 50+ teacher managers and instructional leaders across 8 partner school teams</li>
+          <li>Designed multi-phase improvement plans aligned to data insights and institutional goals</li>
+          <li>Served on the Pearson NOW Plan Project committee, partnering with McKinsey &amp; Company on districts' transition to online learning during COVID-19</li>
+          <li>Scaled the consulting practice by building onboarding resources and internal capability tools</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2015 – 2019</div>
+        <h3>Manager of Teacher Operations</h3>
+        <div class="tl-org">Pearson Virtual Schools</div>
+        <ul>
+          <li>Managed and coached 20+ state-certified online teachers nationwide</li>
+          <li>Oversaw 20+ PLC Department Chairs; led the project transforming the Dufour PLC Model into an online format adopted nationwide</li>
+          <li>Designed large-scale systems for teacher evaluation, certification, and instructional delivery</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2012 – 2015</div>
+        <h3>Faculty, Curriculum Writer &amp; Leadership Roles</h3>
+        <div class="tl-org">Pearson Virtual Schools</div>
+        <ul>
+          <li>Delivered online instruction nationally while holding leadership and supervisory responsibilities</li>
+          <li>Contributed to curriculum development, including award-winning digital learning programs</li>
+          <li>Served as liaison between instructional teams and curriculum departments</li>
+        </ul>
+      </div>
+      <div class="tl-item additional">
+        <div class="tl-date">2005 – 2017</div>
+        <h3>Additional Experience</h3>
+        <div class="tl-org">Instructional Connections (2015–2017) &amp; Fort Wayne Community Schools (2005–2013)</div>
+        <ul>
+          <li>Academic Coach &amp; Course Facilitator — supported student success across online undergraduate and graduate courses</li>
+          <li>Educator, Fort Wayne Community Schools — delivered K–5 instruction in high-need environments; PLC lead and quality-improvement team member</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="creds" id="credentials">
+  <div class="wrap">
+    <div class="creds-grid">
+      <div class="creds-col">
+        <h3>Education &amp; Credentials</h3>
+        <div class="cred-item">
+          <h4>Doctor of Education (Ed.D.), Higher Education</h4>
+          <p>Argosy University</p>
+        </div>
+        <div class="cred-item">
+          <h4>Master of Music, Piano Performance &amp; Pedagogy</h4>
+          <p>Ball State University</p>
+        </div>
+        <div class="cred-item">
+          <h4>Bachelor of Science in Education</h4>
+          <p>Asbury University</p>
+        </div>
+        <div class="cred-item">
+          <h4>Certificate in Business Administration</h4>
+          <p>Ivy Tech Community College</p>
+        </div>
+      </div>
+      <div class="creds-col">
+        <h3>Awards, Publications &amp; Speaking</h3>
+        <div class="award-item">
+          <div class="k">Award</div>
+          <p>BESSIE Award, The ComputED Gazette — "Best Educational Software," K–2 <span class="yr">(2013)</span></p>
+        </div>
+        <div class="award-item">
+          <div class="k">Speaking</div>
+          <p>2025 National GEAR UP Conference — Keynote Introduction Speaker</p>
+          <p>2025 GEAR UP West Conference — "Partnering Beyond the Bell: Cross-Sector Collaboration to Support Every Student"</p>
+          <p>2024 ASPIRE Conference — "Beyond the City Limits: Holistic Strategies to Support Rural Students"</p>
+        </div>
+        <div class="award-item">
+          <div class="k">Publications</div>
+          <p>"Motivation Through Collaboration in the Online Teaching and Learning Environment," Lilly Conference on College and University Teaching and Learning <span class="yr">(2015)</span></p>
+          <p>"Faculty and Student Perceptions of Motivational Traits that Contribute to Completion Rates in Online Degree Undergraduate Programs," 21st Century Academic Forum, Harvard University <span class="yr">(2014)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Get in Touch</span>
+    <h2>Open to new opportunities</h2>
+    <p class="lede">Executive leadership, strategic partnerships, and cross-sector program design roles — federally funded programs, ed-tech operations, and education-to-career pathways work.</p>
+    <div class="contact-links">
+      <a href="mailto:leannarachelwilson@gmail.com">leannarachelwilson@gmail.com</a>
+      <a href="tel:+12602410425">(260) 241-0425</a>
+      <a href="https://linkedin.com/in/dr-leanna-wilson-03a920201" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Dr. LeAnna R. Wilson, Ed.D. &middot; Fort Wayne, Indiana
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+
+</body>
+</html>
