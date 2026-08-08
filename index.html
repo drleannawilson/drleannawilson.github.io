@@ -86,10 +86,7 @@
     font-family:'Playfair Display',serif;
   }
   .hero p.lede{
-    color:#dfe4ec;font-size:1.08rem;max-width:600px;
-  }
-  .hero p.lede + p.lede{
-    margin-top:16px;
+    color:#dfe4ec;font-size:1.08rem;max-width:560px;
   }
   .hero-loc{
     margin-top:18px;color:#a9b4c5;font-size:.9rem;
@@ -204,6 +201,17 @@
   .award-item p{font-size:.92rem;color:var(--text);margin-top:4px;}
   .award-item span.yr{color:var(--muted);}
 
+  /* TESTIMONIALS */
+  .testimonials{background:var(--navy);color:var(--cream);}
+  .testimonials .section-head h2{color:#fff;}
+  .testimonials .section-head p{color:#b7c0d0;}
+  .testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
+  .testimonial-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:36px;}
+  .testimonial-card .quote{color:#dfe4ec;font-size:1rem;font-style:italic;line-height:1.75;margin-bottom:24px;}
+  .testimonial-card .quote::before{content:'\201C';color:var(--gold);font-family:'Playfair Display',serif;font-size:2.6rem;line-height:0;position:relative;top:10px;margin-right:4px;font-style:normal;}
+  .testimonial-author strong{display:block;color:#fff;font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;}
+  .testimonial-author span{color:#a9b4c5;font-size:.85rem;}
+
   /* CONTACT */
   .contact{background:var(--paper);text-align:center;}
   .contact h2{font-size:clamp(1.8rem,3.4vw,2.5rem);}
@@ -227,6 +235,7 @@
     .case{grid-template-columns:1fr;}
     .exp-grid{grid-template-columns:1fr;}
     .creds-grid{grid-template-columns:1fr;}
+    .testimonial-grid{grid-template-columns:1fr;}
     section{padding:64px 0;}
   }
 </style>
@@ -241,6 +250,7 @@
       <a href="#work">Impact</a>
       <a href="#experience">Experience</a>
       <a href="#credentials">Credentials</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
@@ -250,12 +260,10 @@
 <section class="hero" id="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Executive Leader &middot; Partnerships &amp; Strategic Growth</span>
+      <span class="eyebrow">Executive Leader &middot; Education &amp; Strategic Partnerships</span>
       <h1>Dr. LeAnna R. Wilson</h1>
       <div class="hero-role">Turning Strategy Into Systems That Scale</div>
-      <p class="lede">For more than 20 years, I've led at the intersection of relationships, strategy, and execution: beginning in the classroom and evolving through instructional design, leadership coaching, operations, and ultimately executive partnership leadership overseeing a national portfolio of district and grant-funded organizations.</p>
-      <p class="lede">Across every chapter of my career, the throughline has been consistent: build the systems, teams, and partnerships that turn strategy into measurable results at scale. I bring a relationship-centered leadership approach grounded in data, operational discipline, and cross-functional alignment. I believe strong relationships create opportunity, but sustainable outcomes happen when those relationships are supported by the right systems, clear accountability, and teams equipped to execute.</p>
-      <p class="lede">Today, I operate at the intersection of strategy, partnerships, customer success, and organizational execution, helping organizations translate ambitious goals into scalable, sustainable impact.</p>
+      <p class="lede">I've spent 20+ years building the cross-sector systems that turn strategy into postsecondary pathways — leading federally funded GEAR UP portfolios, district partnerships, and national ed-tech operations that create real change at scale for underserved students.</p>
       <div class="hero-loc">Fort Wayne, Indiana &nbsp;|&nbsp; Open to Remote (US)</div>
       <div class="hero-cta">
         <a href="#work" class="btn btn-primary">See the Work</a>
@@ -546,6 +554,32 @@
           <div class="k">Publications</div>
           <p>"Motivation Through Collaboration in the Online Teaching and Learning Environment," Lilly Conference on College and University Teaching and Learning <span class="yr">(2015)</span></p>
           <p>"Faculty and Student Perceptions of Motivational Traits that Contribute to Completion Rates in Online Degree Undergraduate Programs," 21st Century Academic Forum, Harvard University <span class="yr">(2014)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">In Their Words</span>
+      <h2>Testimonials</h2>
+      <p>What partners and colleagues say about working with me.</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="quote">I had the privilege of working with Dr. LeAnna Wilson during her tenure with Student Success Agency while serving as Director of GEAR UP Southern West Virginia. LeAnna is an exceptional thought partner who consistently worked to align SSA services with our program goals, helping maximize impact for the students and communities we serve. What impressed me most was her commitment to continuous improvement. She welcomed feedback on services, processes, and data systems and translated that input into meaningful enhancements that strengthened our overall experience and outcomes. LeAnna brings energy, expertise, and genuine passion to her work. I highly recommend her to any organization seeking a dedicated, innovative, and student-centered leader.</p>
+        <div class="testimonial-author">
+          <strong>Dr. Sheila Womack</strong>
+          <span>Director, GEAR UP Southern West Virginia</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">What I appreciated most was that she invested herself in our program. She took the time to understand the unique needs of each district and genuinely cared about helping us create the best possible experience for our students. She was always accessible when questions came up and consistently followed through on every commitment she made. Over time, she became someone our team trusted because we knew she was invested in our success as much as we were. Working with Dr. Wilson reinforced that successful partnerships are built on trust and a shared commitment to improving outcomes for students. I am grateful for the opportunity to have worked alongside her and recommend her with complete confidence.</p>
+        <div class="testimonial-author">
+          <strong>Dr. Frank Tittle</strong>
+          <span>Executive Director, GEAR UP, Tennessee Technological University</span>
         </div>
       </div>
     </div>
